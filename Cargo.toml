@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "src/todo_rust_backend"
+]
+exclude = [
+    "test_todos"
+]
+resolver = "2"
+

@@ -1,0 +1,10 @@
+[package]
+name = "test_todos"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+pocket-ic = "2.2.0"
+candid = "0.10"
+ic-cdk = "0.13"

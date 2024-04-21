@@ -1,0 +1,11 @@
+type Result = variant { Ok : nat16; Err : text };
+type Result_1 = variant { Ok; Err : text };
+type Result_2 = variant { Ok : text; Err : text };
+type Result_3 = variant { Ok : record { vec text; opt nat16 }; Err : text };
+service : {
+  add : (text) -> (Result);
+  delete : (nat16) -> (Result_1);
+  read : (nat16) -> (Result_2) query;
+  read_all : (nat16) -> (Result_3) query;
+  update : (nat16, text) -> (Result_1);
+}
